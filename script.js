@@ -34,7 +34,8 @@ async function getSongs(folder) {
 
     currFolder = folder
 
-    let a = await fetch(`http://localhost:5500/songs/${folder}/`)
+    // let a = await fetch(`http://localhost:5500/songs/${folder}/`)
+    let a = await fetch(`/songs/${folder}`)
     let res = await a.text()
 
     let div = document.createElement('div')
@@ -87,7 +88,8 @@ async function playMusic(track, pause = false) {
 }
 
 async function displayAlbum() {
-    let a = await fetch(`http://localhost:5500/songs/`)
+    // let a = await fetch(`http://localhost:5500/songs/`)
+    let a = await fetch(`/songs/`)
     let res = await a.text()
 
     let div = document.createElement('div')
@@ -104,7 +106,8 @@ async function displayAlbum() {
 
             let folder = e.href.split('/').slice(-1)[0]
 
-            let a = await fetch(`http://localhost:5500/songs/${folder}/info.json`)
+            // let a = await fetch(`http://localhost:5500/songs/${folder}/info.json`)
+            let a = await fetch(`/songs/${folder}/info.json`)
             let res = await a.json()
 
             mainCards.innerHTML += `<div data-folder="${folder}" class="card flex items-centre">
@@ -205,6 +208,8 @@ async function main() {
             volumeInput.value = 10;
         }
     })
+
+    currentSong.pause()
 }
 
 main()
