@@ -1,4 +1,3 @@
-console.log(`Now writing Js`)
 
 let previous = document.querySelector('#previous')
 let play = document.querySelector('#play')
@@ -16,7 +15,6 @@ let previousSong;
 let currentSong = new Audio()
 let nextSong;
 let currFolder;
-// let folder;
 
 function secondsToMinutes(seconds) {
     if (isNaN(seconds) || seconds < 0) {
@@ -69,7 +67,6 @@ async function getSongs(folder) {
 
     Array.from(document.querySelector('.songList').getElementsByTagName('li')).forEach(e => {
         e.addEventListener('click', () => {
-            // console.log(e.querySelector('.songName').innerHTML)
             playMusic(e.querySelector('.songName').innerHTML)
         })
     })
@@ -106,11 +103,9 @@ async function displayAlbum() {
         if (e.href.includes('/songs/')) {
 
             let folder = e.href.split('/').slice(-1)[0]
-            console.log(folder)
 
             let a = await fetch(`http://localhost:5500/songs/${folder}/info.json`)
             let res = await a.json()
-            console.log(res)
 
             mainCards.innerHTML += `<div data-folder="${folder}" class="card flex items-centre">
                 <img src='/songs/${folder}/cover.jpg' alt="">
@@ -189,8 +184,6 @@ async function main() {
         }
     })
 
-    currentSong.pause()
-
     volumeInput.addEventListener('change', (e) => {
         console.log('Setting Volume to', e.target.value, '/ 100')
         currentSong.volume = parseInt(e.target.value) / 100
@@ -201,10 +194,7 @@ async function main() {
         }
     })
 
-    currentSong.pause()
-
     volumeImg.addEventListener('click', (e) => {
-        console.log(e.target)
         if (e.target.src.includes('assets/images/volume.svg')) {
             e.target.src = e.target.src.replace('assets/images/volume.svg', 'assets/images/mute.svg',)
             currentSong.volume = 0;
