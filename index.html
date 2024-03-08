@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="utility.css">
+    <link rel="icon" href="assets/images/favicon.ico">
+    <title>Spotify - Web Player: Music for everyone</title>
+</head>
+
+<body>
+    <div class="container flex">
+        <div class="left">
+            <div class="home bg-gray">
+
+                <img class="invert" src="assets/images/logo.svg" alt="">
+
+                <div class="homeBtnContainer flex">
+
+                    <div class="homebtn flex">
+                        <img class="invert" width="20" height="20" src="assets/images/home.svg" alt="home">
+                        <p>Home</p>
+                    </div>
+
+                    <div class="searchbtn flex">
+                        <!-- <img width="20" height="20" class="invert" src="assets/images/search.svg" alt="search"> -->
+                        <svg xmlns="http://www.w3.org/2000/svg" fill='#b3b3b3' data-encore-id="icon" role="img"
+                            aria-hidden="true" class="Svg-sc-ytk21e-0 bneLcE search-icon" viewBox="0 0 24 24">
+                            <path
+                                d="M10.533 1.27893C5.35215 1.27893 1.12598 5.41887 1.12598 10.5579C1.12598 15.697 5.35215 19.8369 10.533 19.8369C12.767 19.8369 14.8235 19.0671 16.4402 17.7794L20.7929 22.132C21.1834 22.5226 21.8166 22.5226 22.2071 22.132C22.5976 21.7415 22.5976 21.1083 22.2071 20.7178L17.8634 16.3741C19.1616 14.7849 19.94 12.7634 19.94 10.5579C19.94 5.41887 15.7138 1.27893 10.533 1.27893ZM3.12598 10.5579C3.12598 6.55226 6.42768 3.27893 10.533 3.27893C14.6383 3.27893 17.94 6.55226 17.94 10.5579C17.94 14.5636 14.6383 17.8369 10.533 17.8369C6.42768 17.8369 3.12598 14.5636 3.12598 10.5579Z">
+                            </path>
+                        </svg>
+
+                        <p>Search</p>
+
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="library bg-gray">
+                <!-- <img class="invert" width="24" height="24" src="assets/images/library.svg" alt=""> -->
+                <div class="libraryHeading flex items-centre">
+
+                    <svg xmlns="http://www.w3.org/2000/svg" fill='#b3b3b3' data-encore-id="icon" role="img"
+                        aria-hidden="true" viewBox="0 0 24 24" class="Svg-sc-ytk21e-0 bneLcE">
+                        <path
+                            d="M3 22a1 1 0 0 1-1-1V3a1 1 0 0 1 2 0v18a1 1 0 0 1-1 1zM15.5 2.134A1 1 0 0 0 14 3v18a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V6.464a1 1 0 0 0-.5-.866l-6-3.464zM9 2a1 1 0 0 0-1 1v18a1 1 0 1 0 2 0V3a1 1 0 0 0-1-1z">
+                        </path>
+                    </svg>
+
+                    <span>Your Library</span>
+
+                    <div class="libraryPlus">
+                        <img class="invert" src="assets/images/plus.svg" alt="">
+                    </div>
+                </div>
+
+                <div class="songList">
+                    <ul>
+                        <!-- <li>
+                            <img class="invert" src="assets/images/music.svg" alt="">
+                            <div class="songName">Song Lorem ipsum dolor </div>
+                            <div class="playNow">
+                                <span>Play&nbsp;now</span>
+                                <img class="invert" src="assets/images/playSong.svg" alt="">
+                            </div>
+                        </li> -->
+                    </ul>
+                </div>
+
+                <div class="footer">
+                    <a href="https://www.spotify.com/in-en/legal/"><span>Legal</span></a>
+                    <a href="https://www.spotify.com/in-en/safetyandprivacy/"><span>Safety &amp; Privacy
+                            Center</span></a>
+                    <a href="https://www.spotify.com/in-en/legal/privacy-policy/"><span>Privacy Policy</span></a>
+                    <a href="https://www.spotify.com/in-en/legal/cookies-policy/"><span>Cookies</span></a>
+                    <a href="https://www.spotify.com/in-en/legal/privacy-policy/#s3"><span>About Ads</span></a>
+                    <a href="https://www.spotify.com/in-en/accessibility/"><span>Accessibility</span></a>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="right bg-gray boder-radius-8">
+            <div class="rightHeader flex items-centre boder-radius-8">
+                <div class="headerImgs flex">
+                    <img width="32" height="32" src="assets/images/leftArrow.svg" alt="">
+
+                    <img width="32" height="32" src="assets/images/rightArrow.svg" alt="">
+                </div>
+
+                <div class="headerBtn flex">
+                    <button class="signup">Sign up</button>
+                    <button class="login">Log in</button>
+                </div>
+
+            </div>
+
+            <div class="cardContainer">
+
+                <div class="cardHeading flex">
+                    <h2>Spotify Playlists</h2>
+                    <p>Show all</p>
+                </div>
+
+                <div class="mainCard flex">
+
+                    <!-- <div data-folder="cs" class="card flex items-centre">
+                        <img src="assets/images/cover.jpg" alt="">
+
+                        <div class="videoIcon">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill='#000' data-encore-id="icon" role="img"
+                                aria-hidden="true" viewBox="0 0 24 24" class="Svg-sc-ytk21e-0 bneLcE"
+                                style="width: 60%; height: 60%;">
+                                <path
+                                    d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606z">
+                                </path>
+                            </svg>
+                        </div>
+
+
+                        <div class="cardText flex">
+
+                            <h3>Happy Hits!</h3>
+                            <p>Hits to boost your mood and fill you wit</p> -->
+                    <!-- <span>h happiness!</span> -->
+
+                    <!-- </div>
+                    </div>
+
+                    <div data-folder="ncs"="" class="card flex items-centre">
+                        <img src="assets/images/cover.jpg" alt="">
+
+                        <div class="videoIcon">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill='#000' data-encore-id="icon" role="img"
+                                aria-hidden="true" viewBox="0 0 24 24" class="Svg-sc-ytk21e-0 bneLcE"
+                                style="width: 60%; height: 60%;">
+                                <path
+                                    d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606z">
+                                </path>
+                            </svg>
+                        </div>
+
+
+                        <div class="cardText flex">
+
+                            <h3>Happy Hits!</h3>
+                            <p>Hits to boost your mood and fill you wit</p> -->
+                    <!-- <span>h happiness!</span> -->
+
+                    <!-- </div> -->
+                    <!-- </div> -->
+                </div>
+
+            </div>
+
+            <div class="playBar">
+
+                <div class="playBarContent flex">
+
+                    <div class="songInfo"></div>
+
+                    <div class="songButtons">
+                        <img id="previous" class="invert" src="assets/images/prevsong.svg" alt="">
+                        <img id="play" class="invert" src="assets/images/playSong.svg" alt="">
+                        <img id="next" class="invert" src="assets/images/nextsong.svg" alt="">
+                    </div>
+
+                    <div class="playBarMain flex items-centre">
+                        <div class="songTime"></div>
+
+                        <div class="volumeContainer flex">
+                            <img class="invert" id="volumeImg" src="assets/images/volume.svg" alt="volume">
+                            <input type="range" name="volume" id="volumeInput">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="seekbar">
+                    <div class="circle"></div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

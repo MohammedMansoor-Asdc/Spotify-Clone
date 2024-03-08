@@ -1,0 +1,36 @@
+.flex {
+  display: flex;
+}
+
+.items-centre {
+  align-items: center;
+}
+
+.invert {
+  filter: invert(1);
+}
+
+.border {
+  border: 2px solid red;
+}
+
+.bg-gray {
+  background-color: #121212;
+}
+
+.boder-radius-8 {
+  border-radius: 8px;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #333; /* Dark background color */
+}
+
+::-webkit-scrollbar-thumb {
+  background: #666; /* Dark color for the scrollbar thumb */
+  border-radius: 5px;
+}
