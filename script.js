@@ -162,6 +162,14 @@ async function main() {
     currentSong.addEventListener('timeupdate', () => {
         songTime.innerHTML = `${secondsToMinutes(currentSong.currentTime)} / ${secondsToMinutes(currentSong.duration)}`
         circle.style.left = (currentSong.currentTime / currentSong.duration) * 100 + '%';
+
+        if (currentSong.currentTime == currentSong.duration) {
+            let index = songs.indexOf(currentSong.src.split('/').slice(-1)[0])
+            if ((index + 1) < songs.length) {
+                playMusic(songs[index + 1])
+            }
+        }
+
     })
 
     seekbar.addEventListener('click', (e) => {
